@@ -20,16 +20,12 @@ export default class FacebookScreen extends React.Component {
     },
   }
 
-  JS = '<script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>';
-  source = this.JS + '<blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">8 TED Talks to inspire projects with kids: <a href="https://twitter.com/TEDTalks/status/758116657638309896">https://twitter.com/TEDTalks/status/758116657638309896</a> <a href="https://twitter.com/TEDTalks/status/758116657638309896">pic.twitter.com/HMmYAeP7Km</a></p>&mdash; TED Talks (@TEDTalks) <a href="https://twitter.com/TEDTalks/status/758116657638309896">27 de julio de 2016</a></blockquote>';
-
   render() {
     return (
 	<View style={styles.container}>
 		<View style={styles.mainContainer}>
 			<WebView 
-				source={{html: this.source}}
-				javaScriptEnabled={true}
+				source={{uri: 'https://www.facebook.com/pages/Helena-High-School/112492818766942?fref=ts'}}
 			/>
 	  </View>
 	  </View>
